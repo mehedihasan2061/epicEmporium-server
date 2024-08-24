@@ -69,8 +69,7 @@ async function run() {
     const recommendCollection = client
       .db("epicEmporium")
       .collection("recommend");
-    // const bidsCollection = client.db("soloSphere").collection("bids");
-// console.log(process.env.ACCESS_TOKEN_SECRET);
+  
     // jwt generate
     app.post("/jwt", async (req, res) => {
       const email = req.body;
